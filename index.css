@@ -1,0 +1,84 @@
+/* global styling */
+
+body {
+    margin: 0px;
+    font-family: Consolas;
+    /* color: #3f3f3f; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sectionTitle {
+    font-family: Consolas;
+    color: #c1c1c1;
+    font-style: italic;
+}
+
+h2 {
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-size: 5em;
+    margin-top: 0px;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 26px;
+}
+
+button {
+    border: 1px darkgray solid;
+    float: right;
+    font-family: Consolas;
+    padding: 10px 15px;
+    color: darkgray;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    -webkit-transition:  color .3s, border .3s; /* Safari */
+    -moz-transition: color .3s, border .3s;
+    -ms-transition: color .3s, border .3s;      
+    transition: color .3s, border .3s;
+}
+
+
+
+/* Header styling */
+
+#header h1 {
+    margin-top: 10px;
+    margin-left: -5px;
+    font-size: 80px;
+    line-height: .6em;
+    letter-spacing: -0.07em;
+    color: #dedede;
+    position: fixed;
+}
+
+/* Main content styling */
+
+#main {
+    position: absolute;
+    transform: translateY(30%);
+    width: 100vw;
+    height: 100vh
+}
+
+
+/* image styling */
+img {
+    width: 80%;
+    height: auto;
+    transform: translateX(12.5%);
+}
+
+/* #exhibitDesc {
+    position: absolute;
+    transform: translateY(25%);
+} */
