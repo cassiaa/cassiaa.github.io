@@ -12,17 +12,6 @@ function arrowClick(direction) {
     if (new_id >= 0 && new_id < num_photos) {
         updateViewer(new_id);
     }
-
-    // // Negative value means go back
-    // if (direction < 0) {
-    //     // If the item is not the first item in the list, go back
-    //     if (item.id > 0) {
-    //         //let new_id = item.id+direction;
-    //         console.log(new_id);
-    //         updateViewer((new_id));
-    //     }
-    // }
-
 }
 
 function updateViewer(index) {
@@ -36,6 +25,7 @@ function updateViewer(index) {
     current_photo = index;
     console.log("current_photo = " + current_photo);
 
+    // If the photo has already been loaded, display it from the cache
     if (photo_cache[current_photo] != null) {
         document.getElementById('gallery' + current_photo).style.display = 'block';
     } else {
@@ -48,24 +38,6 @@ function updateViewer(index) {
         photo_cache.splice(current_photo, 1, new_img);
         photo.appendChild(new_img);  
     }
-
-    
-    
-//    photo.innerHTML = "";
-
-    // // Prevents trying to find an image if user is looking at about div
-    // if (index == 0) {
-    //     document.getElementById('0').style.display = 'block';
-    // } else {
-    //     // Create a new image object from the index parameter
-    //     let new_img = document.createElement("IMG");
-    //     new_img.setAttribute('src', 'images/gallery/' + index + '.jpg');
-    //     new_img.setAttribute('id', 'gallery'+index);
-    //     new_img.setAttribute('class', 'gallery');
-    //     photo.appendChild(new_img);    
-    // }
-
-    
 
 }
 

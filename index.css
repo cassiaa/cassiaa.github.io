@@ -30,7 +30,6 @@ p {
 
 button {
     border: 1px darkgray solid;
-    float: right;
     font-family: Consolas;
     padding: 10px 15px;
     color: darkgray;
@@ -59,6 +58,7 @@ button:hover {
     letter-spacing: -0.07em;
     color: #dedede;
     position: fixed;
+    z-index: -9999;
 }
 
 /* Main content styling */
@@ -72,7 +72,7 @@ button:hover {
 
 
 /* image styling */
-img {
+img#exhibitDesc {
     width: 80%;
     height: auto;
     transform: translateX(12.5%);
