@@ -1,6 +1,35 @@
-#main {
+.half {
+    width: 50%;
+    height: 80vh;
+    float: left;
+}
+
+#thumbnails {
+    overflow: scroll;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border: none;
+    margin: 5px;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: ease 0.5s;
+}
+
+.about {
+    background-color: #d3d3d3;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
 }
