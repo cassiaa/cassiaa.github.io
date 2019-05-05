@@ -1,6 +1,14 @@
+.container {
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .half {
     width: 50%;
-    height: 80vh;
     float: left;
 }
 
@@ -29,9 +37,19 @@
     background-color: #d3d3d3;
 }
 
+/* #photo {
+    width: 100%;
+} */
+
+/* class added to each gallery image, NOT the div containing it */
 .gallery {
+    max-width: 600px;
     width: 100%;
     height: auto;
+}
+
+#gallery0 {
+    width: 100%;
 }
 
 #controls {
