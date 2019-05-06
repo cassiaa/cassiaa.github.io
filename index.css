@@ -11,21 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-.sectionTitle {
-    font-family: Consolas;
-    color: #c1c1c1;
-    font-style: italic;
-}
-
 h2 {
     /* font-family: Helvetica, Arial, sans-serif; */
     font-size: 5em;
     margin-top: 0px;
-}
-
-p {
-    line-height: 1.5em;
-    font-size: 26px;
 }
 
 a {
@@ -36,30 +25,117 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #474747;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 button {
-    border: 1px darkgray solid;
     font-family: Consolas;
     padding: 10px 15px;
-    color: darkgray;
-    
+    background-color: #DAF186;
+    border: none;
+    color: black;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: rgb(199, 223, 115);
     color: black;
-    border-color: black;
-    -webkit-transition:  color .3s, border .3s; /* Safari */
-    -moz-transition: color .3s, border .3s;
-    -ms-transition: color .3s, border .3s;      
-    transition: color .3s, border .3s;
+    border: none;
+    -webkit-transition: background-color .3s; /* Safari */
+    -moz-transition: background-color .3s;
+    -ms-transition: background-color .3s;      
+    transition: background-color .3s;
+}
+
+/* Custom style classes */
+
+.display {
+    font-size: 90px;
+    line-height: .8em;
+    letter-spacing: -0.06em;
+}
+
+.sectionTitle {
+    font-family: Consolas;
+    color: #c1c1c1;
+    font-style: italic;
+}
+
+.subheading {
+    line-height: 1.5em;
+    font-size: 26px;
+}
+
+.description {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+.caption {
+    font-style: italic;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
 }
 
 .flex-item {
-    margin: 15px;
+    margin: 30px;
 }
 
+.padding-sm {
+    padding: 20px;
+}
+
+.rm-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section {
+    margin-bottom: 100px;
+    display: block;
+}
+
+.section-padding {
+    height: 100vh;
+}
+
+.pink {
+    color: #FF688F;
+}
+
+.green {
+    color: #DAF186;
+}
+
+.center {
+    text-align: center;
+}
+
+.anchor-div {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.anchor-div a {
+    position: absolute;
+    left: 0px;
+    top: -250px;
+}
+
+
+
+
+/* element-specific styling */
 
 /* Header styling */
 
@@ -71,6 +147,7 @@ button:hover {
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 9999;
 }
 
 #header h1 {
@@ -106,34 +183,69 @@ button:hover {
     transition: 0.3s;
 } 
 
+#navMenu a:visited {
+    background-color: #DAF186;
+}
+
 
 /* Main content styling */
 
 #main {
+    transform: translateY(150px);
+    background-image: url('images/base-img.jpg');
+    background-attachment: fixed;
+    background-color: #DAF186;
+}
+
+
+/* On exhibit section */
+#on-exhibit {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh
+    background-color: white;
+    padding-bottom: 200px;
 }
 
 
 /* image styling */
 img#exhibitThumbnail{
-    width: 600px;
-    height: 600px;
-    margin: 10px;
+    /* width: 80%; */
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 50px;
     /* transform: translateX(12.5%); */
 }
 
 #exhibitDesc {
-    width: 600px;
-
+    width: 500px;
+    margin: 50px;
+    text-align: center;
 }
 
-/* #exhibitDesc {
-    position: absolute;
-    transform: translateY(25%);
-} */
+/* About section */
+#about {
+    height: 100vh;
+}
+
+/* Responsive styling */
+
+@media only screen and (max-width: 1200px) {
+    #on-exhibit {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    img#exhibitThumbnail {
+        width: calc(100% - 20px);
+    }
+
+    #exhibitDesc {
+        width: 100%;
+        max-width: 500px;
+    }
+}
