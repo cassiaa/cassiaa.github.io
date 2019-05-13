@@ -1,8 +1,12 @@
 /* global styling */
+html {
+    font-size: 18px !important;
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 body {
     margin: 0px;
-    font-family: Consolas;
+    
     /* color: #3f3f3f; */
 }
 
@@ -15,6 +19,10 @@ h2 {
     /* font-family: Helvetica, Arial, sans-serif; */
     font-size: 5em;
     margin-top: 0px;
+}
+
+p {
+    font-size: 1em;
 }
 
 a {
@@ -33,11 +41,12 @@ a:active {
 }
 
 button {
-    font-family: Consolas;
-    padding: 10px 15px;
+    font-weight: bold;
+    padding: 15px 15px;
     background-color: #DAF186;
     border: none;
     color: black;
+    font-size: 1em;
 }
 
 button:hover {
@@ -54,9 +63,13 @@ button:hover {
 /* Custom style classes */
 
 .display {
-    font-size: 8em;
+    font-size: 6em;
     line-height: .8em;
     letter-spacing: -0.06em;
+}
+
+h1.display {
+    margin: 0px;
 }
 
 .sectionTitle {
@@ -67,16 +80,17 @@ button:hover {
 
 .subheading {
     line-height: 1.5em;
-    font-size: 26px;
+    font-size: 1.8em;
 }
 
 .description {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.8em;
 }
 
 .caption {
     font-style: italic;
+    font-size: .8em;
 }
 
 .flex-container {
@@ -86,8 +100,15 @@ button:hover {
     justify-content: center;
 }
 
+.flex-container-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
 .flex-item {
-    margin: 30px;
+    margin: 20px;
 }
 
 .padding-sm {
@@ -105,6 +126,21 @@ button:hover {
 .rm-vertical-padding {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.rm-horizontal-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-block {
+    width: 550px;
+    padding: 40px;
+}
+
+.text-block p {
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
 
 .section {
@@ -160,7 +196,7 @@ button:hover {
 
 #header h1 {
     margin: 20px 20px;
-    font-size: 46px;
+    font-size: 2.8em;
     line-height: .8em;
     letter-spacing: -0.07em;
     color: #dedede;
@@ -172,7 +208,12 @@ button:hover {
 }
 
 #header h1 > a:hover {
-    color: #dddddd;
+    color: #DAF186;
+    transition: 0.3s;
+}
+
+#navMenu {
+    font-weight: bold;
 }
 
 #navMenu ul {
@@ -236,7 +277,8 @@ img#exhibitThumbnail{
 
 /* About section */
 #about {
-    height: 100vh;
+    margin-bottom: 0px;
+    height: 140vh;
 }
 
 #display-left {
@@ -246,6 +288,10 @@ img#exhibitThumbnail{
 /* Responsive styling */
 
 @media only screen and (max-width: 1200px) {
+    html {
+        font-size: 16px !important;
+    }
+    
     #on-exhibit {
         flex-direction: column;
     }
@@ -254,12 +300,14 @@ img#exhibitThumbnail{
         flex-direction: column;
     }
 
-    
+    .flex-container {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    .display {
-        font-size: 4em;
+    html {
+        font-size: 15px !important;
     }
     
     img#exhibitThumbnail {
