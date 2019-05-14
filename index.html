@@ -2,12 +2,17 @@
 <html>
 <head>
    <title>Society of Independent Citizens</title>
-   <!-- <link rel="stylesheet" type="text/css" href="./bootstrap-3.4.1-dist/css/bootstrap.css"> -->
    <link rel="stylesheet" type="text/css" href="index.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
 </head>
 	
 <body>
+
+   
+
+
+   <!--Normal header display-->
 	<div id="header">
 		<div id="title">
 			<h1><a href="./index.html">Society of<br>Independent<br>Citizens</a></h1>
@@ -16,16 +21,35 @@
          <ul>
             <li><a href="#on-exhibit-tag">on exhibition</a></li>
             <li><a href="#about-tag">about</a></li>
-            <li><a href="#visit">visit</a></li>
+            <li><a href="#join">join</a></li>
          </ul>
       </div>
    </div>
 
+   <!--Icon to toggle mobile nav (only viewable at vw < 1200px)-->
+   <button onclick="openNav()" id="mobile-nav">+</button>
+   
+   <!--Mobile nav menu-->
+   <div id="mobile-menu">
+      <div id="title">
+         <h1><a href="./index.html">Society of<br>Independent<br>Citizens</a></h1>
+      </div>
+      <div id="navMenu">
+         <ul>
+            <li><a href="index.html#on-exhibit">on exhibition</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="#join">join</a></li>
+         </ul>
+      </div>
+   </div>
+
+
+   <!--Main content area-->
    <div id="main">
       
+      <!--ON EXHIBITION-->
       <div class="anchor-div">
          <a name="on-exhibit-tag" class="anchor">&nbsp;</a>
-        
       </div>
       
       <div id="on-exhibit" class="section">
@@ -46,12 +70,13 @@
          </div>
       </div>
 
+
+      <!--ABOUT-->
+
       <div class="anchor-div">
          <a name="about-tag" class="anchor">&nbsp;</a>
       </div>
-      
-
-
+   
 
       <div id="about" class="flex-container-vert section">
          
@@ -83,9 +108,13 @@
             </div>
          </div>
 
+         <div class="center padding-sm"><button class="button-pink">Become a Member ></button></div>
+
       </div>
 
    </div>
+   
+   <script type="text/javacript" src="./index.js"></script>
 </body>
 
 </html>

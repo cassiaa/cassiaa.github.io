@@ -60,6 +60,14 @@ button:hover {
     transition: background-color .3s;
 }
 
+.button-pink {
+    background-color: #FF688F;
+}
+
+.button-pink:hover {
+    background-color: rgb(255, 79, 123);
+}
+
 /* Custom style classes */
 
 .display {
@@ -98,6 +106,7 @@ h1.display {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
 }
 
 .flex-container-vert {
@@ -140,7 +149,7 @@ h1.display {
 
 .text-block p {
     font-size: 1.1em;
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
 
 .section {
@@ -154,6 +163,10 @@ h1.display {
 
 .pink {
     color: #FF688F;
+}
+
+.pink-fill {
+    background-color: #FF688F;
 }
 
 .green {
@@ -236,6 +249,32 @@ h1.display {
     background-color: #DAF186;
 }
 
+/* mobile header stying */
+#mobile-header-icon {
+    text-align: right;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: none;
+    font-size: 80px;
+    padding-right: 15px;
+    font-family: 'Helvetica Light', 'Helvetica';
+}
+
+#mobile-header-icon:hover {
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+
 
 /* Main content styling */
 
@@ -278,6 +317,7 @@ img#exhibitThumbnail{
 /* About section */
 #about {
     margin-bottom: 0px;
+    padding-bottom: 100px;
 }
 
 #about-header {
@@ -315,6 +355,17 @@ img#exhibitThumbnail{
 
     .display {
         font-size: 5em;
+    }
+
+    /* hide normal header and show mobile icon */
+    #header {
+        display: none;
+        z-index: -9999;
+    }
+
+    #mobile-nav {
+        z-index: 9999;
+        display: block;
     }
 }
 
