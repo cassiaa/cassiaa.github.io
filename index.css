@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0px;
+    background-image: url('images/base-img.jpg');
     
     /* color: #3f3f3f; */
 }
@@ -71,7 +72,7 @@ button:hover {
 /* Custom style classes */
 
 .display {
-    font-size: 6em;
+    font-size: 5.5em;
     line-height: .8em;
     letter-spacing: -0.06em;
 }
@@ -279,10 +280,9 @@ h1.display {
 /* Main content styling */
 
 #main {
-    transform: translateY(150px);
-    background-image: url('images/base-img.jpg');
+    transform: translateY(100px);
     background-attachment: fixed;
-    background-color: #DAF186;
+    /* background-color: #DAF186; */
 }
 
 
