@@ -1,5 +1,5 @@
 let current_photo = 0;      // Updated when user selects a new photo
-let num_photos = 10;         // Needs to be updated as new photos are added
+let num_photos = 9;         // Needs to be updated as new photos are added
 let photo_cache = ["<div id='gallery0'>Hello!</div>", null, null, null, null, null, null, null, null,null];   
 
 // direction == -1 --> back
