@@ -1,14 +1,22 @@
 .container {
-    height: calc(100vh - 160px);
+    min-height: calc(100vh - 160px);
     position: relative;
     transform: translateY(160px);
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
     background-color: white;
-    
 }
 
+.project-desc {
+    max-width: 900px;
+    position: relative;
+    left: 50%;
+    margin-left: -450px;
+    margin-bottom: 50px;
+}
+
+.project-desc p {
+    line-height: 1.6em;
+    text-align: justify;
+}
 /* container for the grid profiles */
 .profile-container {
     display: flex;
@@ -19,22 +27,40 @@
 
 .profile {
     display: grid;
-    grid-template-columns: 10px 100px auto;
+    grid-template-columns: 100px auto;
     grid-template-rows: auto;
     grid-template-areas: 
-        ". icon description"
-        "main main main";
+        "icon description"
+        "main main";
     grid-gap: 50px 20px;
+    align-items: center;
+    width: 460px;
+}
+
+.profile h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.profile p {
+    line-height: 1.5em;
 }
 
 .icon {
     width: 100px;
     height: 100px;
     grid-area: icon;
+    justify-self: center;
+    align-self: center;
 }
 
 .prof-description {
     grid-area: description;
+}
+
+.gray {
+    color: gray;
 }
 
 /* each profile is contained within a grid-container */
@@ -43,7 +69,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5px;
-    /* width: 460px; */
+    width: 460px;
 }
 .thumbnail {
     width: 150px;
@@ -142,10 +168,36 @@
 
     .profile {
         margin-bottom: 100px;
+        width: 610px;
     }
 
     .thumbnail {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .project-desc {
+        left: 0;
+        margin-left: 5px;
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .grid-container {
+        width: calc(100% + 10px);
+        justify-items: center;
     }
 }

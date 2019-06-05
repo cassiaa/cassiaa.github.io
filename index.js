@@ -1,7 +1,3 @@
-let mobileNav = document.getElementById('mobile-nav');
-console.log(mobileNav);
-mobileNav.addEventListener('click', function() { console.log('clicked'); });
-
 function openNav() {
     console.log('clicked');
     alert('clicked');
@@ -14,3 +10,12 @@ function openNav() {
     }
 }
 
+
+
+    
+
+window.addEventListener('load', (event) => {
+    let mobileNav = document.getElementById('mobile-nav');
+    console.log(mobileNav);
+    mobileNav.addEventListener('click', function() { console.log('clicked'); });
+})

@@ -69,7 +69,6 @@ for (var i = 0; i < thumbnails.length; i++) {
     thumbnails[i].addEventListener('click', function() {
         openModal();
         updateViewer(this.id);
-        
     })
 }
 
