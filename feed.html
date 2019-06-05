@@ -26,61 +26,73 @@
 
    </div>
 
+   <div id="modal">
+      <button id="close-modal">close</button>
+      <button class="controls" id="back-button" onclick="arrowClick(-1)">&#8249;</button>
+      <div id="photo-div"></div>
+      <button class="controls" id="forward-button" onclick="arrowClick(1)">&#8250;</button>
+      
+   </div>
+
    <div class="container">
+      
       <div class="profile-container">
 
          <div class="profile">
             <img class="icon" src="images/thumbnails/6.jpg" id="6">
-            <div class="prof-description"><p>Influencer</p></div>
+            <div class="prof-description"><p>@cassia_artanegara</p></div>
             <div class="grid-container">
-               <img class="thumbnail" src="images/influencer-thumbnails/1.jpg" id="1">
-               <img class="thumbnail" src="images/influencer-thumbnails/2.jpg" id="2">
-               <img class="thumbnail" src="images/influencer-thumbnails/3.jpg" id="3">
-               <img class="thumbnail" src="images/influencer-thumbnails/4.jpg" id="4">
-               <img class="thumbnail" src="images/influencer-thumbnails/5.jpg" id="5">
-               <img class="thumbnail" src="images/influencer-thumbnails/6.jpg" id="6">
-               <img class="thumbnail" src="images/influencer-thumbnails/7.jpg" id="7">
-               <img class="thumbnail" src="images/influencer-thumbnails/8.jpg" id="8">
-               <img class="thumbnail" src="images/influencer-thumbnails/9.jpg" id="9">
+               <img class="thumbnail" src="images/influencer-thumbnails/1.jpg" id="0">
+               <img class="thumbnail" src="images/influencer-thumbnails/2.jpg" id="1">
+               <img class="thumbnail" src="images/influencer-thumbnails/3.jpg" id="2">
+               <img class="thumbnail" src="images/influencer-thumbnails/4.jpg" id="3">
+               <img class="thumbnail" src="images/influencer-thumbnails/5.jpg" id="4">
+               <img class="thumbnail" src="images/influencer-thumbnails/6.jpg" id="5">
+               <img class="thumbnail" src="images/influencer-thumbnails/7.jpg" id="6">
+               <img class="thumbnail" src="images/influencer-thumbnails/8.jpg" id="7">
+               <img class="thumbnail" src="images/influencer-thumbnails/9.jpg" id="8">
             </div>
          </div>
 
          <div class="profile">
             <img class="icon" src="images/thumbnails/6.jpg" id="6">
-            <div class="prof-description"><p>Description</p></div>
+            <div class="prof-description"><p>@snapsbycassia</p></div>
             <div class="grid-container">
-               <img class="thumbnail" src="images/thumbnails/1.jpg" id="1">
-               <img class="thumbnail" src="images/thumbnails/2.jpg" id="2">
-               <img class="thumbnail" src="images/thumbnails/3.jpg" id="3">
-               <img class="thumbnail" src="images/thumbnails/4.jpg" id="4">
-               <img class="thumbnail" src="images/thumbnails/5.jpg" id="5">
-               <img class="thumbnail" src="images/thumbnails/6.jpg" id="6">
-               <img class="thumbnail" src="images/thumbnails/7.jpg" id="7">
-               <img class="thumbnail" src="images/thumbnails/8.jpg" id="8">
-               <img class="thumbnail" src="images/thumbnails/9.jpg" id="9">
+               <img class="thumbnail" src="images/amateur-thumbnails/10.jpg" id="9">
+               <img class="thumbnail" src="images/amateur-thumbnails/11.jpg" id="10">
+               <img class="thumbnail" src="images/amateur-thumbnails/12.jpg" id="11">
+               <img class="thumbnail" src="images/amateur-thumbnails/13.jpg" id="12">
+               <img class="thumbnail" src="images/amateur-thumbnails/14.jpg" id="13">
+               <img class="thumbnail" src="images/amateur-thumbnails/15.jpg" id="14">
+               <img class="thumbnail" src="images/amateur-thumbnails/16.jpg" id="15">
+               <img class="thumbnail" src="images/amateur-thumbnails/17.jpg" id="16">
+               <img class="thumbnail" src="images/amateur-thumbnails/18.jpg" id="17">
             </div>
          </div>
 
          <div class="profile">
             <img class="icon" src="images/thumbnails/6.jpg" id="6">
-            <div class="prof-description"><p>Description</p></div>
+            <div class="prof-description"><p>@cassia_photo</p></div>
             <div class="grid-container">
-               <img class="thumbnail" src="images/thumbnails/1.jpg" id="1">
-               <img class="thumbnail" src="images/thumbnails/2.jpg" id="2">
-               <img class="thumbnail" src="images/thumbnails/3.jpg" id="3">
-               <img class="thumbnail" src="images/thumbnails/4.jpg" id="4">
-               <img class="thumbnail" src="images/thumbnails/5.jpg" id="5">
-               <img class="thumbnail" src="images/thumbnails/6.jpg" id="6">
-               <img class="thumbnail" src="images/thumbnails/7.jpg" id="7">
-               <img class="thumbnail" src="images/thumbnails/8.jpg" id="8">
-               <img class="thumbnail" src="images/thumbnails/9.jpg" id="9">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/19.jpg" id="18">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/20.jpg" id="19">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/21.jpg" id="20">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/22.jpg" id="21">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/23.jpg" id="22">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/24.jpg" id="23">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/25.jpg" id="24">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/26.jpg" id="25">
+               <img class="thumbnail" src="images/aesthetic-thumbnails/27.jpg" id="26">
             </div>
          </div>
-   </div>
+      </div>
+
+      
    </div>
 
+   
    <!-- save large images at 800x800 px, 72 resolution jpg-->
-   <img src="images/amateur-large/10.jpg">
+   <!-- <img src="images/amateur-large/17.jpg"> -->
 
    <!-- <div id="mobile-header">
          <div id="title">
@@ -128,14 +140,11 @@
 
       <!-- Div where main photo view will go -->
       <div id="viewer" class="half">
-         <div id="photo">
+         <!-- <div id="photo">
             <div id="gallery0">Hello!</div>
-         </div>
+         </div> -->
 
-         <div id="controls">
-            <button onclick="arrowClick(-1)">back</button>
-            <button onclick="arrowClick(1)">forward</button>
-         </div>
+         
       </div>
    </div>
 

@@ -200,7 +200,7 @@ h1.display {
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 9999;
+    z-index: 999;
 }
 
 #header h1 {
@@ -268,7 +268,7 @@ h1.display {
     height: 100vh;
     padding: 0;
     margin: 0;
-    z-index: 9999;
+    z-index: 999;
 }
 
 
@@ -359,7 +359,7 @@ img#exhibitThumbnail{
     }
 
     #mobile-nav {
-        z-index: 9999;
+        z-index: 999;
         display: block;
     }
 }
