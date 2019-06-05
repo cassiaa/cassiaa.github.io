@@ -49,7 +49,7 @@ function updateViewer(index) {
 function openModal() {
     let modal = document.getElementById('modal');
     modal.style.display = 'block';
-    modal.style.zIndex = 9999;
+    modal.style.zIndex = 999;
 }
 
 function closeModal() {

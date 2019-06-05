@@ -146,8 +146,8 @@
 
 .controls {
     position: absolute;
-    background-color: none !important;
     font-size: 30px;
+    z-index: 999;
 }
 
 #back-button {
@@ -183,6 +183,20 @@
         margin-left: 5px;
         padding: 10px;
         width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #photo-div {
+        width: 100%;
+        left: 0px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .photo {
+        height: auto;
+        width: 100%;
     }
 }
 
