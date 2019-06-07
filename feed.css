@@ -5,6 +5,7 @@
     background-color: white;
 }
 
+
 .project-desc {
     max-width: 900px;
     position: relative;
@@ -16,6 +17,10 @@
 .project-desc p {
     line-height: 1.6em;
     text-align: justify;
+}
+
+.project-desc h1 {
+    padding-bottom: 50px;
 }
 /* container for the grid profiles */
 .profile-container {
