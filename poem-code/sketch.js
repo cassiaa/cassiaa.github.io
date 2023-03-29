@@ -1,5 +1,5 @@
 let sketchWidth = ((window.innerWidth-20) / 3);
-let sketchHeight = window.innerHeight - 100;
+let sketchHeight = window.innerHeight - 200;
 
 let c = 7;
 let phrase = "what if I chose differently?";
@@ -139,7 +139,6 @@ const s3 = ( sketch ) => {
 let sketch1 = new p5(s1, document.getElementById('sketch1'));
 let sketch2 = new p5(s2, document.getElementById('sketch2'));
 let sketch3 = new p5(s3, document.getElementById('sketch3'));
-sketch1.id("sketch1");
 
 let paused = false;
 

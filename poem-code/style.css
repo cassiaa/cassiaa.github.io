@@ -2,7 +2,7 @@
 html {
   margin: 0;
   padding: 0;
-  background: #090909;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -15,7 +15,7 @@ h1 {
   font-family: "Courier New";
 }
 
-.sketch-container {
+/*.sketch-container {
   display: flex;
   height: 100px;
   width: 100vw;
@@ -24,36 +24,40 @@ h1 {
 .sketch {
   flex: 1;
 
-}
+}*/
 canvas {
 }
 
+#button-menu {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
 
 .button {
   background-color: #000000;
   color: #ffffff;
-  border: none;
+  border-weight: 1px;
+  border-color: #ffffff;
   padding: 10px 20px;
   text-align: center;
   cursor: pointer;
-  font-family: "Courier New"
-  flex: 1;
-
+  font-family: "Courier New";
+  height: 40px;
 }
 
-.center {
+
+#info {
+  min-height: 100px;
+  padding: 5px 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+#header {
+  max-width: 60%;
 }
 
 #description {
-  display: none;
 }
 
-#header {
-  display: flex;
-  padding: 5px 20px;
-  justify-content: space-between;
-
-}
