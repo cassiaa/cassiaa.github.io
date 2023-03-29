@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+.sketch-container {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+}
+
+.sketch {
+  flex: 1;
+}
+}
+canvas {
+  display: block;
+}
+
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Courier New"
+
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
