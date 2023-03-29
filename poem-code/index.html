@@ -5,23 +5,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="sketch.js"></script>
+    <script src="index.js"></script>
     <meta charset="utf-8" />
 
   </head>
   <body>
     <main>
+      <div id="info">
+        <div id="header">
+          <h1>what if I chose differently?</h1>
+          <div id="button-menu">
+            <button class="button" id="aboutBtn" onclick="revealDescription()">about</button>
+            <button class="button" id="pauseBtn" onclick="pauseSketches()">pause sketch</button>
+          </div>
+        </div>
+        <div id="description">
+          <p>This piece explores how our actions ripple outward, creating large-scale change.</p>
+        </div>
+      </div>
+    <!-- 
+      <div class="sketch-container">
+        <div id="sketch1"></div>
+        <div id="sketch2"></div>
+        <div id="sketch3"></div> 
+      </div> -->
     </main>
 
-    <!-- <div class="sketch-container" >
-
-
-      <div id="sketch1" class="sketch"></div>
-      <div id="sketch2" class="sketch"></div>
-      <div id="sketch3" class="sketch"></div>
-      
-    </div> -->
-    <div class="center">
-      <button class="button" id="pauseBtn" onclick="pauseSketches()">pause</button>
-    </div>
-  </body>
+    </body>
 </html>

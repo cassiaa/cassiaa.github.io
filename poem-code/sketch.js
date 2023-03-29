@@ -1,4 +1,4 @@
-let sketchWidth = (window.innerWidth / 3);
+let sketchWidth = ((window.innerWidth-20) / 3);
 let sketchHeight = window.innerHeight - 100;
 
 let c = 7;
@@ -139,6 +139,7 @@ const s3 = ( sketch ) => {
 let sketch1 = new p5(s1, document.getElementById('sketch1'));
 let sketch2 = new p5(s2, document.getElementById('sketch2'));
 let sketch3 = new p5(s3, document.getElementById('sketch3'));
+sketch1.id("sketch1");
 
 let paused = false;
 
@@ -148,12 +149,12 @@ function pauseSketches() {
     sketch1.loop();
     sketch2.loop();
     sketch3.loop();
-    btn.innerHTML = "pause";
+    btn.innerHTML = "pause sketch";
   } else {
     sketch1.noLoop();
     sketch2.noLoop();
     sketch3.noLoop();  
-    btn.innerHTML = "play";
+    btn.innerHTML = "play sketch";
   }
 
   paused = !paused;
